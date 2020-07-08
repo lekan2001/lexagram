@@ -3,19 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F59DAF06FD8803AAD3C4CDC /* Pods_lexagramTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B223CAC857A7852F7899020 /* Pods_lexagramTests.framework */; };
+		5CC4D209C0E38A2D8DEE83A9 /* Pods_lexagram_lexagramUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F564A6C18B2A026CA094A07F /* Pods_lexagram_lexagramUITests.framework */; };
+		BD78771BD8CD024BC0061D3A /* Pods_lexagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D29B00C785F82473214675 /* Pods_lexagram.framework */; };
 		E4F8EB1B24B53CE9006BF595 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F8EB1A24B53CE9006BF595 /* AppDelegate.m */; };
 		E4F8EB1E24B53CE9006BF595 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F8EB1D24B53CE9006BF595 /* SceneDelegate.m */; };
-		E4F8EB2124B53CE9006BF595 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F8EB2024B53CE9006BF595 /* ViewController.m */; };
 		E4F8EB2424B53CE9006BF595 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4F8EB2224B53CE9006BF595 /* Main.storyboard */; };
 		E4F8EB2624B53CEA006BF595 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4F8EB2524B53CEA006BF595 /* Assets.xcassets */; };
 		E4F8EB2924B53CEA006BF595 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4F8EB2724B53CEA006BF595 /* LaunchScreen.storyboard */; };
 		E4F8EB2C24B53CEA006BF595 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F8EB2B24B53CEA006BF595 /* main.m */; };
 		E4F8EB3624B53CEA006BF595 /* lexagramTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F8EB3524B53CEA006BF595 /* lexagramTests.m */; };
 		E4F8EB4124B53CEA006BF595 /* lexagramUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F8EB4024B53CEA006BF595 /* lexagramUITests.m */; };
+		E4F8EB5124B54E34006BF595 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F8EB5024B54E34006BF595 /* LoginViewController.m */; };
+		E4F8EB5424B5749F006BF595 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F8EB5324B5749F006BF595 /* HomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,13 +40,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19D29B00C785F82473214675 /* Pods_lexagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lexagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		214610B640633D9CF3305C01 /* Pods-lexagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lexagram.debug.xcconfig"; path = "Target Support Files/Pods-lexagram/Pods-lexagram.debug.xcconfig"; sourceTree = "<group>"; };
+		6F50FEC727DCEF316D1E196D /* Pods-lexagram-lexagramUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lexagram-lexagramUITests.release.xcconfig"; path = "Target Support Files/Pods-lexagram-lexagramUITests/Pods-lexagram-lexagramUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8B223CAC857A7852F7899020 /* Pods_lexagramTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lexagramTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98A977622E98EDE6F55E7CC0 /* Pods-lexagramTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lexagramTests.debug.xcconfig"; path = "Target Support Files/Pods-lexagramTests/Pods-lexagramTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C0B7ACF0C3D91C64C48EFEA8 /* Pods-lexagram-lexagramUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lexagram-lexagramUITests.debug.xcconfig"; path = "Target Support Files/Pods-lexagram-lexagramUITests/Pods-lexagram-lexagramUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C12C1774D45A82B13FBE9A4F /* Pods-lexagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lexagram.release.xcconfig"; path = "Target Support Files/Pods-lexagram/Pods-lexagram.release.xcconfig"; sourceTree = "<group>"; };
 		E4F8EB1624B53CE9006BF595 /* lexagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lexagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4F8EB1924B53CE9006BF595 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E4F8EB1A24B53CE9006BF595 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E4F8EB1C24B53CE9006BF595 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		E4F8EB1D24B53CE9006BF595 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		E4F8EB1F24B53CE9006BF595 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E4F8EB2024B53CE9006BF595 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E4F8EB2324B53CE9006BF595 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E4F8EB2524B53CEA006BF595 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4F8EB2824B53CEA006BF595 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,6 +63,12 @@
 		E4F8EB3C24B53CEA006BF595 /* lexagramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lexagramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4F8EB4024B53CEA006BF595 /* lexagramUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lexagramUITests.m; sourceTree = "<group>"; };
 		E4F8EB4224B53CEA006BF595 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4F8EB4F24B54E34006BF595 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		E4F8EB5024B54E34006BF595 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		E4F8EB5224B5749F006BF595 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		E4F8EB5324B5749F006BF595 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		E9E09BF77451E48FBC037DF7 /* Pods-lexagramTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lexagramTests.release.xcconfig"; path = "Target Support Files/Pods-lexagramTests/Pods-lexagramTests.release.xcconfig"; sourceTree = "<group>"; };
+		F564A6C18B2A026CA094A07F /* Pods_lexagram_lexagramUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lexagram_lexagramUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD78771BD8CD024BC0061D3A /* Pods_lexagram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F59DAF06FD8803AAD3C4CDC /* Pods_lexagramTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,12 +92,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CC4D209C0E38A2D8DEE83A9 /* Pods_lexagram_lexagramUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B8E37A048CB0E1FC46709EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19D29B00C785F82473214675 /* Pods_lexagram.framework */,
+				F564A6C18B2A026CA094A07F /* Pods_lexagram_lexagramUITests.framework */,
+				8B223CAC857A7852F7899020 /* Pods_lexagramTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A53753CA815AF00D4BC905D0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				214610B640633D9CF3305C01 /* Pods-lexagram.debug.xcconfig */,
+				C12C1774D45A82B13FBE9A4F /* Pods-lexagram.release.xcconfig */,
+				C0B7ACF0C3D91C64C48EFEA8 /* Pods-lexagram-lexagramUITests.debug.xcconfig */,
+				6F50FEC727DCEF316D1E196D /* Pods-lexagram-lexagramUITests.release.xcconfig */,
+				98A977622E98EDE6F55E7CC0 /* Pods-lexagramTests.debug.xcconfig */,
+				E9E09BF77451E48FBC037DF7 /* Pods-lexagramTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E4F8EB0D24B53CE9006BF595 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +129,8 @@
 				E4F8EB3424B53CEA006BF595 /* lexagramTests */,
 				E4F8EB3F24B53CEA006BF595 /* lexagramUITests */,
 				E4F8EB1724B53CE9006BF595 /* Products */,
+				A53753CA815AF00D4BC905D0 /* Pods */,
+				3B8E37A048CB0E1FC46709EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,12 +147,11 @@
 		E4F8EB1824B53CE9006BF595 /* lexagram */ = {
 			isa = PBXGroup;
 			children = (
+				E4F8EB4E24B54E0B006BF595 /* ViewControllers */,
 				E4F8EB1924B53CE9006BF595 /* AppDelegate.h */,
 				E4F8EB1A24B53CE9006BF595 /* AppDelegate.m */,
 				E4F8EB1C24B53CE9006BF595 /* SceneDelegate.h */,
 				E4F8EB1D24B53CE9006BF595 /* SceneDelegate.m */,
-				E4F8EB1F24B53CE9006BF595 /* ViewController.h */,
-				E4F8EB2024B53CE9006BF595 /* ViewController.m */,
 				E4F8EB2224B53CE9006BF595 /* Main.storyboard */,
 				E4F8EB2524B53CEA006BF595 /* Assets.xcassets */,
 				E4F8EB2724B53CEA006BF595 /* LaunchScreen.storyboard */,
@@ -137,6 +179,17 @@
 			path = lexagramUITests;
 			sourceTree = "<group>";
 		};
+		E4F8EB4E24B54E0B006BF595 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E4F8EB4F24B54E34006BF595 /* LoginViewController.h */,
+				E4F8EB5024B54E34006BF595 /* LoginViewController.m */,
+				E4F8EB5224B5749F006BF595 /* HomeViewController.h */,
+				E4F8EB5324B5749F006BF595 /* HomeViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,9 +197,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E4F8EB4524B53CEA006BF595 /* Build configuration list for PBXNativeTarget "lexagram" */;
 			buildPhases = (
+				834475E5BAB65D8762EF16D5 /* [CP] Check Pods Manifest.lock */,
 				E4F8EB1224B53CE9006BF595 /* Sources */,
 				E4F8EB1324B53CE9006BF595 /* Frameworks */,
 				E4F8EB1424B53CE9006BF595 /* Resources */,
+				C23169D9B1A4CEAFDA6CB69C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -161,6 +216,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E4F8EB4824B53CEA006BF595 /* Build configuration list for PBXNativeTarget "lexagramTests" */;
 			buildPhases = (
+				F835B736B38BE4B8284D228E /* [CP] Check Pods Manifest.lock */,
 				E4F8EB2D24B53CEA006BF595 /* Sources */,
 				E4F8EB2E24B53CEA006BF595 /* Frameworks */,
 				E4F8EB2F24B53CEA006BF595 /* Resources */,
@@ -179,9 +235,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E4F8EB4B24B53CEA006BF595 /* Build configuration list for PBXNativeTarget "lexagramUITests" */;
 			buildPhases = (
+				21BA3764A060556E052C8248 /* [CP] Check Pods Manifest.lock */,
 				E4F8EB3824B53CEA006BF595 /* Sources */,
 				E4F8EB3924B53CEA006BF595 /* Frameworks */,
 				E4F8EB3A24B53CEA006BF595 /* Resources */,
+				0923E17FEB11D9063037FDFF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -262,14 +320,118 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0923E17FEB11D9063037FDFF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-lexagram-lexagramUITests/Pods-lexagram-lexagramUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-lexagram-lexagramUITests/Pods-lexagram-lexagramUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-lexagram-lexagramUITests/Pods-lexagram-lexagramUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		21BA3764A060556E052C8248 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-lexagram-lexagramUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		834475E5BAB65D8762EF16D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-lexagram-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C23169D9B1A4CEAFDA6CB69C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-lexagram/Pods-lexagram-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-lexagram/Pods-lexagram-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-lexagram/Pods-lexagram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F835B736B38BE4B8284D228E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-lexagramTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E4F8EB1224B53CE9006BF595 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4F8EB2124B53CE9006BF595 /* ViewController.m in Sources */,
+				E4F8EB5124B54E34006BF595 /* LoginViewController.m in Sources */,
 				E4F8EB1B24B53CE9006BF595 /* AppDelegate.m in Sources */,
 				E4F8EB2C24B53CEA006BF595 /* main.m in Sources */,
+				E4F8EB5424B5749F006BF595 /* HomeViewController.m in Sources */,
 				E4F8EB1E24B53CE9006BF595 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,6 +599,7 @@
 		};
 		E4F8EB4624B53CEA006BF595 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 214610B640633D9CF3305C01 /* Pods-lexagram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -454,6 +617,7 @@
 		};
 		E4F8EB4724B53CEA006BF595 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C12C1774D45A82B13FBE9A4F /* Pods-lexagram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -471,6 +635,7 @@
 		};
 		E4F8EB4924B53CEA006BF595 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98A977622E98EDE6F55E7CC0 /* Pods-lexagramTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -491,6 +656,7 @@
 		};
 		E4F8EB4A24B53CEA006BF595 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9E09BF77451E48FBC037DF7 /* Pods-lexagramTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -511,6 +677,7 @@
 		};
 		E4F8EB4C24B53CEA006BF595 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0B7ACF0C3D91C64C48EFEA8 /* Pods-lexagram-lexagramUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XW8LHVY5HH;
@@ -529,6 +696,7 @@
 		};
 		E4F8EB4D24B53CEA006BF595 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F50FEC727DCEF316D1E196D /* Pods-lexagram-lexagramUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XW8LHVY5HH;

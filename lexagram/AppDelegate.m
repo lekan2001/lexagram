@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import <Parse/Parse.h>
 @interface AppDelegate ()
 
 @end
@@ -16,8 +16,27 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    
+    
     // Override point for customization after application launch.
+    
+    
+    ParseClientConfiguration *configuration = [ParseClientConfiguration configurationWithBlock:^(id<ParseMutableClientConfiguration> configuration) {
+      configuration.applicationId = @"myAppId";
+        configuration.server = @"https://lexagram.herokuapp.com/parse";
+        
+        
+        
+    }];
+    [Parse initializeWithConfiguration:configuration];
+    
+//    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//    UINavigationController *navigationController = [storyboard instantiateViewControllerWithIdentifier:@"loginNavigationController"];
+    //self.window.rootViewController =navigationController;
+    
     return YES;
+    
 }
 
 
