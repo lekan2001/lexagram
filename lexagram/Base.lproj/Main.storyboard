@@ -282,16 +282,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f3r-Ge-QYN">
-                                <rect key="frame" x="165" y="567" width="56" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="SUBMIT">
-                                    <color key="titleColor" red="0.73071724179999997" green="0.25980879369999998" blue="0.1180690571" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <connections>
-                                    <action selector="createPost:" destination="q3U-Ul-Fs6" eventType="touchUpInside" id="KF7-Gb-UKO"/>
-                                </connections>
-                            </button>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="QDp-EX-a8l">
                                 <rect key="frame" x="0.0" y="56" width="414" height="423"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -308,6 +298,28 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VaP-Iv-SEt">
+                                <rect key="frame" x="19" y="567" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <state key="normal" title="Gallery">
+                                    <color key="titleColor" red="0.73071724179999997" green="0.25980879369999998" blue="0.1180690571" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="insertGallery:" destination="eGK-f1-EWi" eventType="touchUpInside" id="EOr-NP-hCI"/>
+                                    <action selector="insertGallery:" destination="q3U-Ul-Fs6" eventType="touchUpInside" id="Gze-lA-bXg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f3r-Ge-QYN">
+                                <rect key="frame" x="165" y="567" width="56" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="SUBMIT">
+                                    <color key="titleColor" red="0.73071724179999997" green="0.25980879369999998" blue="0.1180690571" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="createPost:" destination="q3U-Ul-Fs6" eventType="touchUpInside" id="KF7-Gb-UKO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="35V-TZ-tOt"/>
@@ -320,6 +332,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lta-DQ-hEB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="eGK-f1-EWi" userLabel="Exit" sceneMemberID="exit"/>
                 <tapGestureRecognizer id="1aR-Z8-Rit">
                     <connections>
                         <action selector="onTAp:" destination="q3U-Ul-Fs6" id="YjF-CH-ugE"/>

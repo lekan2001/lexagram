@@ -34,9 +34,36 @@ NSString *HeaderViewIdentifier = @"TableViewHeaderView";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+//    PFUser *user = [PFUser currentUser];     if (user != nil) {
+//
+//    NSLog(@"Welcome back %@ 😀", user.username);
+//
+    PFUser *user = [PFUser currentUser];
+    if (user!= nil) {
+        
+        NSString *userNum = user.username;
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Welcome 😀"
+                                                                       message: userNum
+        preferredStyle:(UIAlertControllerStyleAlert)];
+        // create an OK action
+        UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK"
+                                                           style:UIAlertActionStyleDefault
+                                                         handler:^(UIAlertAction * _Nonnull action) {
+                                                                 // handle response here.
+                                                         }];
+        // add the OK action to the alert controller
+        [alert addAction:okAction];
+        [self presentViewController:alert animated:YES completion:^{
+            // optional code for what happens after the alert controller has finished presenting
+        }];
+        
+        
+    }
+    
     self.postView.delegate = self;
     self.postView.dataSource = self;
     self.postView.rowHeight = 480;
+    
     [self fetchPosts];
     self.refreshControl = [[UIRefreshControl alloc]init];
        self.activityIndicator = [[UIActivityIndicatorView alloc]init];

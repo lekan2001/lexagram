@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "Post.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HomeViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate>
-
+@property  (strong,nonatomic) Post *post;
 
 @end
 

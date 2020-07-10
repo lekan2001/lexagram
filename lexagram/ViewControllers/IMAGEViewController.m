@@ -34,9 +34,10 @@
     
     NSLog(@"I am tapped");
     UIImagePickerController *imagePickerVC = [UIImagePickerController new];
-    imagePickerVC.sourceType = UIImagePickerControllerSourceTypeCamera;
-    
-      [self presentViewController:imagePickerVC animated:YES completion:nil];
+    //imagePickerVC.sourceType = UIImagePickerControllerSourceTypeCamera;
+        imagePickerVC.delegate = self;
+        imagePickerVC.allowsEditing = YES;
+      
     
     if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
         imagePickerVC.sourceType = UIImagePickerControllerSourceTypeCamera;
@@ -45,8 +46,7 @@
         NSLog(@"Camera 🚫 available so we will use photo library instead");
         imagePickerVC.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
     }
-    imagePickerVC.delegate = self;
-    imagePickerVC.allowsEditing = YES;
+    
     
     
     
@@ -95,6 +95,32 @@
     
     
 }
+
+- (IBAction)insertGallery:(id)sender {
+    NSLog(@"I am tapped");
+       UIImagePickerController *imagePickerVC = [UIImagePickerController new];
+       //imagePickerVC.sourceType = UIImagePickerControllerSourceTypeCamera;
+           imagePickerVC.delegate = self;
+           imagePickerVC.allowsEditing = YES;
+         
+      
+           NSLog(@"Camera 🚫 available so we will use photo library instead");
+           imagePickerVC.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+       
+       
+       
+       
+       
+       [self presentViewController:imagePickerVC animated:YES completion:nil];
+       
+       
+    
+    
+}
+
+
+
+
 
 - (UIImage *)resizeImage:(UIImage *)image withSize:(CGSize)size {
       UIImageView *resizeImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, size.width, size.height)];

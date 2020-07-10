@@ -127,9 +127,14 @@
            } else {
                NSLog(@"User logged in successfully");
                
+              // Welcome back %@ 😀", user.username
+               
+              
+               
                // display view controller that needs to shown after successful login
                [self performSegueWithIdentifier:@"firstSegue" sender:nil];
            }
+           
        }];
     
     

@@ -16,6 +16,7 @@
 @dynamic image;
 @dynamic likeCount;
 @dynamic commentCount;
+//@dynamic createdAtString;
 + (nonnull NSString *)parseClassName {
     return @"Post";
 }
@@ -26,11 +27,11 @@
     newPost.caption = caption;
     newPost.likeCount = @(0);
     newPost.commentCount = @(0);
-    NSString *createdAtOriginalString = newPost[@"createdAt"];
-    NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
-    formatter.dateFormat = @"E MMM d HH:mm:ss Z y";
-    NSDate *date = [formatter dateFromString:createdAtOriginalString];
-    newPost.createdAtString = [date shortTimeAgoSinceNow];
+//    NSString *createdAtOriginalString = newPost[@"createdAt"];
+//    NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
+//    formatter.dateFormat = @"E MMM d HH:mm:ss Z y";
+//    NSDate *date = [formatter dateFromString:createdAtOriginalString];
+//    newPost.createdAtString = [date shortTimeAgoSinceNow];
     
     [newPost saveInBackgroundWithBlock: completion];
 }
