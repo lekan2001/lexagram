@@ -11,6 +11,8 @@
 #import <Parse/Parse.h>
 #import "Post.h"
 #import "PostViewCell.h"
+#import "SceneDelegate.h"
+#import "postDetailViewController.h"
 @interface HomeViewController ()
 
 @property (weak, nonatomic) IBOutlet UITableView *postView;
@@ -20,9 +22,15 @@
 @property (strong, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 
 @property(nonatomic, strong)UIRefreshControl *refreshControl;
+@property (assign, nonatomic) BOOL isMoreDataLoading;
+
 @end
 
 @implementation HomeViewController
+NSString *CellIdentifier = @"PostCell";
+NSString *HeaderViewIdentifier = @"TableViewHeaderView";
+
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -45,6 +53,12 @@
 - (IBAction)logout:(id)sender {
     [PFUser logOutInBackgroundWithBlock:^(NSError * _Nullable error) {
         
+        SceneDelegate *sceneDelegate = (SceneDelegate *)self.view.window.windowScene.delegate;
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        UIViewController *loginNavigationController = [storyboard instantiateViewControllerWithIdentifier:@"LoginViewController"];
+        sceneDelegate.window.rootViewController = loginNavigationController;
+        
+        
         NSLog(@"Log out Sucessful");
    
     }];
@@ -52,15 +66,22 @@
     
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if([segue.identifier isEqualToString:@"postdetailSegue"]){
+        postDetailViewController *postdetailscontroller = [segue destinationViewController];
+        PostViewCell *selectedcell =(PostViewCell *) sender;
+        postdetailscontroller.post = selectedcell.post;
+    }
+    
     // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+     //Pass the selected object to the new view controller.
 }
-*/
+
 
 
 -(void) fetchPosts{
@@ -104,6 +125,54 @@
 - (IBAction)postDetailTap:(id)sender {
     NSLog(@"I am tapped");
 }
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    if(!self.isMoreDataLoading){
+        // Calculate the position of one screen length before the bottom of the results
+        int scrollViewContentHeight = self.postView.contentSize.height;
+        int scrollOffsetThreshold = scrollViewContentHeight - self.postView.bounds.size.height;
+        
+        // When the user has scrolled past the threshold, start requesting
+        if(scrollView.contentOffset.y > scrollOffsetThreshold && self.postView.isDragging) {
+            self.isMoreDataLoading = true;
+            [self fetchMorePosts];
+            // ... Code to load more results ...
+        }
+    }
+  
+    
+    
+    }
+-(void)fetchMorePosts{
+    
+    PFQuery *query = [PFQuery queryWithClassName:@"Post"];
+    [query includeKey:@"author"];
+    [query orderByDescending:@"createdAt"];
+    //[query whereKey:@"likesCount" greaterThan:@100];
+   // query.limit = 20;
+
+    // fetch data asynchronously
+    [query findObjectsInBackgroundWithBlock:^(NSArray *posts, NSError *error) {
+        if (posts != nil) {
+            self.userpost = posts;
+           //
+            // do something with the array of object returned by the call
+        } else {
+            self.isMoreDataLoading = false;
+            [self.postView reloadData];
+            NSLog(@"%@", error.localizedDescription);
+        }
+    }];
+    
+    
+    
+    
+}
+
+
+    
+    
+
 
 
 

@@ -7,17 +7,26 @@
 //
 
 #import "postDetailViewController.h"
+#import "UIImageView+AFNetworking.h"
+#import "Datetools.h"
+#import "Post.h"
+#import <Parse/Parse.h>
+
 
 @interface postDetailViewController ()
-
+@property (nonatomic, strong) NSArray * userpost;
 @end
 
 @implementation postDetailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self updatePostDetails];
     // Do any additional setup after loading the view.
 }
+
+
+
 
 
 /*
@@ -29,5 +38,26 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+
+
+
+
+
+-(void)updatePostDetails{
+    
+    self.detailpost.file = self.post[@"image"];
+    [self.detailpost loadInBackground];
+    self.detailscaption.text = self.post[@"caption"];
+    self.detailstime.text = self.post[@"createdAt"];
+    self.detailsuser_name.text = self.post[@"userID"];
+    self.detailstime.text = self.post.createdAtString;
+    NSLog(@"%@", self.post.createdAtString);
+
+        
+        
+    }
+  
+
 
 @end

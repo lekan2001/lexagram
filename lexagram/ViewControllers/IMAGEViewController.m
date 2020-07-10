@@ -34,9 +34,9 @@
     
     NSLog(@"I am tapped");
     UIImagePickerController *imagePickerVC = [UIImagePickerController new];
-   // imagePickerVC.sourceType = UIImagePickerControllerSourceTypeCamera;
+    imagePickerVC.sourceType = UIImagePickerControllerSourceTypeCamera;
     
-    //  [self presentViewController:imagePickerVC animated:YES completion:nil];
+      [self presentViewController:imagePickerVC animated:YES completion:nil];
     
     if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
         imagePickerVC.sourceType = UIImagePickerControllerSourceTypeCamera;
