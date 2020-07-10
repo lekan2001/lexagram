@@ -16,12 +16,23 @@
 
 
 - (void)scene:(UIScene *)scene willConnectToSession:(UISceneSession *)session options:(UISceneConnectionOptions *)connectionOptions {
-    
-    if (PFUser.currentUser) {
-        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    PFUser *user = [PFUser currentUser];     if (user != nil) {
         
-        self.window.rootViewController = [storyboard instantiateViewControllerWithIdentifier:@"LoginViewController"];
-    }
+        NSLog(@"Welcome back %@ 😀", user.username);
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        UIVibrancyEffect *feedNavigationController = [storyboard instantiateViewControllerWithIdentifier:@"HomeNavigationController"];
+        self.window.rootViewController = feedNavigationController;
+        
+   //     SceneDelegate *myDelegate = (SceneDelegate *);
+        
+        
+        
+        
+//                  UIViewController *feedNavigationController = [storyboard instantiateViewControllerWithIdentifier:@"HomeNavigationController"];         self.window.rootViewController = feedNavigationController;
+        
+        //SceneDelegate *myDelegate = (SceneDelegate *)self.view.window.windowScene.delegate;
+             }
+    
     
     // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
     // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.

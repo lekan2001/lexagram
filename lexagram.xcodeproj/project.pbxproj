@@ -20,6 +20,9 @@
 		E4F8EB4124B53CEA006BF595 /* lexagramUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F8EB4024B53CEA006BF595 /* lexagramUITests.m */; };
 		E4F8EB5124B54E34006BF595 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F8EB5024B54E34006BF595 /* LoginViewController.m */; };
 		E4F8EB5424B5749F006BF595 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F8EB5324B5749F006BF595 /* HomeViewController.m */; };
+		E4F8EB9E24B68F37006BF595 /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F8EB9D24B68F37006BF595 /* Post.m */; };
+		E4F8EBA124B7AB77006BF595 /* PostViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F8EBA024B7AB77006BF595 /* PostViewCell.m */; };
+		E4F8EBA424B7DDEF006BF595 /* IMAGEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F8EBA324B7DDEF006BF595 /* IMAGEViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +70,12 @@
 		E4F8EB5024B54E34006BF595 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		E4F8EB5224B5749F006BF595 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		E4F8EB5324B5749F006BF595 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		E4F8EB9C24B68F37006BF595 /* Post.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
+		E4F8EB9D24B68F37006BF595 /* Post.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
+		E4F8EB9F24B7AB77006BF595 /* PostViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostViewCell.h; sourceTree = "<group>"; };
+		E4F8EBA024B7AB77006BF595 /* PostViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostViewCell.m; sourceTree = "<group>"; };
+		E4F8EBA224B7DDEF006BF595 /* IMAGEViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMAGEViewController.h; sourceTree = "<group>"; };
+		E4F8EBA324B7DDEF006BF595 /* IMAGEViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMAGEViewController.m; sourceTree = "<group>"; };
 		E9E09BF77451E48FBC037DF7 /* Pods-lexagramTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lexagramTests.release.xcconfig"; path = "Target Support Files/Pods-lexagramTests/Pods-lexagramTests.release.xcconfig"; sourceTree = "<group>"; };
 		F564A6C18B2A026CA094A07F /* Pods_lexagram_lexagramUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lexagram_lexagramUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -147,6 +156,7 @@
 		E4F8EB1824B53CE9006BF595 /* lexagram */ = {
 			isa = PBXGroup;
 			children = (
+				E4F8EB5724B687AD006BF595 /* Models */,
 				E4F8EB4E24B54E0B006BF595 /* ViewControllers */,
 				E4F8EB1924B53CE9006BF595 /* AppDelegate.h */,
 				E4F8EB1A24B53CE9006BF595 /* AppDelegate.m */,
@@ -157,6 +167,8 @@
 				E4F8EB2724B53CEA006BF595 /* LaunchScreen.storyboard */,
 				E4F8EB2A24B53CEA006BF595 /* Info.plist */,
 				E4F8EB2B24B53CEA006BF595 /* main.m */,
+				E4F8EB9F24B7AB77006BF595 /* PostViewCell.h */,
+				E4F8EBA024B7AB77006BF595 /* PostViewCell.m */,
 			);
 			path = lexagram;
 			sourceTree = "<group>";
@@ -186,8 +198,19 @@
 				E4F8EB5024B54E34006BF595 /* LoginViewController.m */,
 				E4F8EB5224B5749F006BF595 /* HomeViewController.h */,
 				E4F8EB5324B5749F006BF595 /* HomeViewController.m */,
+				E4F8EBA224B7DDEF006BF595 /* IMAGEViewController.h */,
+				E4F8EBA324B7DDEF006BF595 /* IMAGEViewController.m */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E4F8EB5724B687AD006BF595 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E4F8EB9C24B68F37006BF595 /* Post.h */,
+				E4F8EB9D24B68F37006BF595 /* Post.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -429,7 +452,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4F8EB5124B54E34006BF595 /* LoginViewController.m in Sources */,
+				E4F8EB9E24B68F37006BF595 /* Post.m in Sources */,
+				E4F8EBA424B7DDEF006BF595 /* IMAGEViewController.m in Sources */,
 				E4F8EB1B24B53CE9006BF595 /* AppDelegate.m in Sources */,
+				E4F8EBA124B7AB77006BF595 /* PostViewCell.m in Sources */,
 				E4F8EB2C24B53CEA006BF595 /* main.m in Sources */,
 				E4F8EB5424B5749F006BF595 /* HomeViewController.m in Sources */,
 				E4F8EB1E24B53CE9006BF595 /* SceneDelegate.m in Sources */,
