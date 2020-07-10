@@ -17,6 +17,9 @@
 
 @property (nonatomic, strong) NSArray * userpost;
 
+@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
+
+@property(nonatomic, strong)UIRefreshControl *refreshControl;
 @end
 
 @implementation HomeViewController
@@ -25,8 +28,16 @@
     [super viewDidLoad];
     self.postView.delegate = self;
     self.postView.dataSource = self;
-    self.postView.rowHeight = 500;
+    self.postView.rowHeight = 480;
     [self fetchPosts];
+    self.refreshControl = [[UIRefreshControl alloc]init];
+       self.activityIndicator = [[UIActivityIndicatorView alloc]init];
+       [self.refreshControl addTarget:self action:@selector(fetchPosts) forControlEvents:UIControlEventValueChanged];
+    [self.postView insertSubview:self.refreshControl atIndex:0];
+    [self.postView addSubview:self.refreshControl];
+       [_refreshControl setTintColor:[UIColor redColor]];
+       
+    
     
     // Do any additional setup after loading the view.
 }
@@ -53,6 +64,7 @@
 
 
 -(void) fetchPosts{
+    [self.activityIndicator startAnimating];
     PFQuery *query = [PFQuery queryWithClassName:@"Post"];
     [query includeKey:@"author"];
     [query orderByDescending:@"createdAt"];
@@ -69,6 +81,8 @@
             NSLog(@"%@", error.localizedDescription);
         }
     }];
+    
+    [self.refreshControl endRefreshing];
 }
 
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
@@ -85,6 +99,12 @@
     return self.userpost.count;
 
 }
+
+
+- (IBAction)postDetailTap:(id)sender {
+    NSLog(@"I am tapped");
+}
+
 
 
 @end

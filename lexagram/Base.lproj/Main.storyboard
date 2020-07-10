@@ -73,7 +73,23 @@
             </objects>
             <point key="canvasLocation" x="409" y="133"/>
         </scene>
-        <!--Home-->
+        <!--Post Detail View Controller-->
+        <scene sceneID="EcG-7Y-Ot5">
+            <objects>
+                <viewController id="eAY-6r-Ye4" customClass="postDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HgZ-Nk-NOK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="iIl-MH-d5o"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fcA-vS-cje"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5g7-o7-lIH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2933.3333333333335" y="-557.14285714285711"/>
+        </scene>
+        <!--Instagram-->
         <scene sceneID="xLU-YF-loT">
             <objects>
                 <viewController storyboardIdentifier="HomeViewController" id="YeQ-qM-Azh" customClass="HomeViewController" sceneMemberID="viewController">
@@ -85,6 +101,14 @@
                                 <rect key="frame" x="0.0" y="56" width="414" height="786"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="separatorColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <activityIndicatorView key="tableFooterView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" id="5zx-s2-rqh">
+                                    <rect key="frame" x="0.0" y="511" width="414" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="color" red="0.73071724179999997" green="0.25980879369999998" blue="0.1180690571" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </activityIndicatorView>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="455" id="JZf-Ti-ZBg" customClass="PostViewCell">
                                         <rect key="frame" x="0.0" y="28" width="414" height="455"/>
@@ -93,23 +117,29 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="455"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Him-ah-4E8" customClass="PFImageView">
+                                                <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Him-ah-4E8" customClass="PFImageView">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="394"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <gestureRecognizers/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="414" id="Kw1-aK-2j6"/>
                                                         <constraint firstAttribute="height" constant="394" id="aBi-aw-sZS"/>
                                                     </constraints>
+                                                    <connections>
+                                                        <outletCollection property="gestureRecognizers" destination="Tr2-t3-zQY" appends="YES" id="898-pb-Reb"/>
+                                                    </connections>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a pic of fowl at the park" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cKZ-cq-0DQ">
-                                                    <rect key="frame" x="0.0" y="402" width="414" height="20.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a pic of fowl at the park" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cKZ-cq-0DQ">
+                                                    <rect key="frame" x="0.0" y="402" width="414" height="23"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="414" id="jkE-w6-QDu"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                    <color key="textColor" red="0.73071724179999997" green="0.25980879369999998" blue="0.1180690571" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstItem="cKZ-cq-0DQ" firstAttribute="top" secondItem="Him-ah-4E8" secondAttribute="bottom" constant="8" id="EGv-PH-GtO"/>
                                                 <constraint firstAttribute="trailing" secondItem="Him-ah-4E8" secondAttribute="trailing" id="FJa-bd-24t"/>
@@ -127,10 +157,10 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ybx-Ww-9nW"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="6yY-ei-2Lo">
+                    <navigationItem key="navigationItem" title="Instagram" id="6yY-ei-2Lo">
                         <barButtonItem key="leftBarButtonItem" title="Logout" id="93H-AJ-Na3">
                             <color key="tintColor" red="0.73071724179999997" green="0.25980879369999998" blue="0.1180690571" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <connections>
@@ -145,10 +175,17 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="activityIndicator" destination="5zx-s2-rqh" id="rwc-0d-e2c"/>
                         <outlet property="postView" destination="7aY-QD-Io6" id="wdP-6x-kVm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sUN-kf-H9O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Tr2-t3-zQY">
+                    <connections>
+                        <action selector="postDetailTap:" destination="YeQ-qM-Azh" id="W3V-nJ-yWY"/>
+                        <segue destination="eAY-6r-Ye4" kind="show" id="rSq-hE-UZH"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2082.608695652174" y="151.33928571428569"/>
         </scene>
@@ -163,7 +200,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f3r-Ge-QYN">
                                 <rect key="frame" x="165" y="567" width="56" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="SUBMIT"/>
+                                <state key="normal" title="SUBMIT">
+                                    <color key="titleColor" red="0.73071724179999997" green="0.25980879369999998" blue="0.1180690571" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <connections>
                                     <action selector="createPost:" destination="q3U-Ul-Fs6" eventType="touchUpInside" id="KF7-Gb-UKO"/>
                                 </connections>
@@ -171,19 +210,21 @@
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="QDp-EX-a8l">
                                 <rect key="frame" x="0.0" y="56" width="414" height="423"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="1aR-Z8-Rit" appends="YES" id="n6J-jU-NQJ"/>
                                 </connections>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HeK-fg-aKC" customClass="PFTextField">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Caption" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HeK-fg-aKC" customClass="PFTextField">
                                 <rect key="frame" x="0.0" y="500" width="414" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="0.73071724179999997" green="0.25980879369999998" blue="0.1180690571" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="35V-TZ-tOt"/>
                     </view>
                     <navigationItem key="navigationItem" id="H7T-g6-QV4"/>
@@ -210,6 +251,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eXh-5A-hbB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.73071724179999997" green="0.25980879369999998" blue="0.1180690571" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -228,6 +273,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LJa-Aj-Alf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -238,7 +284,29 @@
             </objects>
             <point key="canvasLocation" x="3074" y="151"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FO0-1l-1Uo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="X8F-Jk-5ta" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Fpc-hk-pET"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nG1-sd-c9q">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="eAY-6r-Ye4" kind="relationship" relationship="rootViewController" id="Gls-6C-at7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0cX-Ox-ODs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2023.1884057971015" y="-557.14285714285711"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Gls-6C-at7"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="image_placeholder" width="375" height="375"/>
         <image name="insta_camera_btn" width="25" height="25"/>

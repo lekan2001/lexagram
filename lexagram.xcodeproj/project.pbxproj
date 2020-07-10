@@ -23,6 +23,7 @@
 		E4F8EB9E24B68F37006BF595 /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F8EB9D24B68F37006BF595 /* Post.m */; };
 		E4F8EBA124B7AB77006BF595 /* PostViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F8EBA024B7AB77006BF595 /* PostViewCell.m */; };
 		E4F8EBA424B7DDEF006BF595 /* IMAGEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F8EBA324B7DDEF006BF595 /* IMAGEViewController.m */; };
+		E4F8EBA724B80D3C006BF595 /* postDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F8EBA624B80D3C006BF595 /* postDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,8 @@
 		E4F8EBA024B7AB77006BF595 /* PostViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostViewCell.m; sourceTree = "<group>"; };
 		E4F8EBA224B7DDEF006BF595 /* IMAGEViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMAGEViewController.h; sourceTree = "<group>"; };
 		E4F8EBA324B7DDEF006BF595 /* IMAGEViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMAGEViewController.m; sourceTree = "<group>"; };
+		E4F8EBA524B80D3C006BF595 /* postDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = postDetailViewController.h; sourceTree = "<group>"; };
+		E4F8EBA624B80D3C006BF595 /* postDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = postDetailViewController.m; sourceTree = "<group>"; };
 		E9E09BF77451E48FBC037DF7 /* Pods-lexagramTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lexagramTests.release.xcconfig"; path = "Target Support Files/Pods-lexagramTests/Pods-lexagramTests.release.xcconfig"; sourceTree = "<group>"; };
 		F564A6C18B2A026CA094A07F /* Pods_lexagram_lexagramUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lexagram_lexagramUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -200,6 +203,8 @@
 				E4F8EB5324B5749F006BF595 /* HomeViewController.m */,
 				E4F8EBA224B7DDEF006BF595 /* IMAGEViewController.h */,
 				E4F8EBA324B7DDEF006BF595 /* IMAGEViewController.m */,
+				E4F8EBA524B80D3C006BF595 /* postDetailViewController.h */,
+				E4F8EBA624B80D3C006BF595 /* postDetailViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -453,6 +458,7 @@
 			files = (
 				E4F8EB5124B54E34006BF595 /* LoginViewController.m in Sources */,
 				E4F8EB9E24B68F37006BF595 /* Post.m in Sources */,
+				E4F8EBA724B80D3C006BF595 /* postDetailViewController.m in Sources */,
 				E4F8EBA424B7DDEF006BF595 /* IMAGEViewController.m in Sources */,
 				E4F8EB1B24B53CE9006BF595 /* AppDelegate.m in Sources */,
 				E4F8EBA124B7AB77006BF595 /* PostViewCell.m in Sources */,
