@@ -18,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak,nonatomic) IBOutlet UILabel *detailsuser_name;
 @property (weak,nonatomic) IBOutlet UILabel *detailscaption;
 @property (weak,nonatomic) IBOutlet UILabel *detailstime;
+
 @end
 
 NS_ASSUME_NONNULL_END

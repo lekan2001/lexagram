@@ -51,13 +51,23 @@
     self.detailscaption.text = self.post[@"caption"];
     self.detailstime.text = self.post[@"createdAt"];
     self.detailsuser_name.text = self.post[@"userID"];
-    self.detailstime.text = self.post.createdAtString;
-    NSLog(@"%@", self.post.createdAtString);
-
-        
+   // self.detailstime.text = self.post.createdAtString;
+    //NSLog(@"%@", self.post.createdAtString);
+    
+    NSDate *mydate = self.post.createdAt;
+    NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
+    formatter.dateFormat = @"E MMM d HH:mm:ss Z y";
+    formatter.dateStyle = NSDateFormatterShortStyle;
+    if (mydate == nil) {
+        NSLog(@"I was not here");
+    }
+    [formatter stringFromDate:mydate];
+    self.detailstime.text = [formatter stringFromDate:mydate];
         
     }
   
+
+
 
 
 @end
