@@ -15,40 +15,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X99-Hz-rdm">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X99-Hz-rdm">
                                 <rect key="frame" x="65" y="334" width="279" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R8Y-Rc-nXr">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R8Y-Rc-nXr">
                                 <rect key="frame" x="65" y="413" width="279" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vxb-ql-0BI">
-                                <rect key="frame" x="245" y="492" width="82" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
-                                <state key="normal" title="Login">
-                                    <color key="titleColor" red="0.73071724179999997" green="0.25980879369999998" blue="0.1180690571" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <connections>
-                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IrY-59-6yc"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lexagram" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vjW-eh-G1i">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lexagram" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vjW-eh-G1i">
                                 <rect key="frame" x="55" y="233" width="299" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="35"/>
                                 <color key="textColor" red="0.7307172417640686" green="0.25980879371329035" blue="0.11806905713344037" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLx-ij-R8R">
-                                <rect key="frame" x="55" y="492" width="92" height="30"/>
+                                <rect key="frame" x="176" y="455" width="62" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
                                 <state key="normal" title="Sign up">
@@ -59,8 +45,30 @@
                                     <action selector="regUser:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fnN-Lh-rBn"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vxb-ql-0BI">
+                                <rect key="frame" x="180" y="507" width="48" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.73071724179999997" green="0.25980879369999998" blue="0.1180690571" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IrY-59-6yc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="vjW-eh-G1i" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="189" id="119-Lv-pfr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vjW-eh-G1i" secondAttribute="trailing" constant="60" id="6u7-KY-XZk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="R8Y-Rc-nXr" secondAttribute="trailing" constant="70" id="Eqe-nt-VTN"/>
+                            <constraint firstItem="X99-Hz-rdm" firstAttribute="top" secondItem="vjW-eh-G1i" secondAttribute="bottom" constant="45" id="PkW-ol-uh4"/>
+                            <constraint firstItem="vjW-eh-G1i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="55" id="WDF-zl-mVa"/>
+                            <constraint firstItem="R8Y-Rc-nXr" firstAttribute="top" secondItem="X99-Hz-rdm" secondAttribute="bottom" constant="45" id="f62-Ae-GfR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="X99-Hz-rdm" secondAttribute="trailing" constant="70" id="hje-Cv-DVW"/>
+                            <constraint firstItem="R8Y-Rc-nXr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="65" id="jl9-wN-Pcq"/>
+                            <constraint firstItem="X99-Hz-rdm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="65" id="qzb-IB-YOx"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -88,6 +96,7 @@
                                         <rect key="frame" x="0.0" y="8" width="414" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="414" id="5iW-wC-kDS"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="414" id="IxW-mS-D9Z"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="21"/>
                                         <color key="textColor" red="0.73071724179999997" green="0.25980879369999998" blue="0.1180690571" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -97,12 +106,14 @@
                                         <rect key="frame" x="0.0" y="50" width="414" height="414"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="414" id="D6T-3T-UoB"/>
+                                            <constraint firstAttribute="width" constant="414" id="gnB-Nh-7eu"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Caption" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5b-DL-xIg">
                                         <rect key="frame" x="4" y="472" width="406" height="29"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="406" id="inB-ov-tNy"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="406" id="zOv-Jz-z1a"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="18"/>
                                         <color key="textColor" red="0.73071724179999997" green="0.25980879369999998" blue="0.1180690571" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -111,6 +122,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kpi-Ke-Irq">
                                         <rect key="frame" x="0.0" y="509" width="414" height="83"/>
                                         <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="414" id="YAJ-19-7pi"/>
                                             <constraint firstAttribute="width" constant="414" id="ep5-f6-ViL"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="14"/>
@@ -209,9 +221,8 @@
                                                     <color key="textColor" red="0.73071724179999997" green="0.25980879369999998" blue="0.1180690571" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X35-rA-Cha">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X35-rA-Cha">
                                                     <rect key="frame" x="49" y="450" width="30" height="30"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" image="favor-icon-1">
                                                         <color key="titleColor" red="0.73071724179999997" green="0.25980879369999998" blue="0.1180690571" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     </state>
@@ -219,9 +230,8 @@
                                                         <action selector="likeTap:" destination="JZf-Ti-ZBg" eventType="touchUpInside" id="1hg-zi-3Za"/>
                                                     </connections>
                                                 </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QrK-oj-dX7">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QrK-oj-dX7">
                                                     <rect key="frame" x="96" y="455" width="8" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.73071724179999997" green="0.25980879369999998" blue="0.1180690571" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
@@ -229,10 +239,16 @@
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="QrK-oj-dX7" secondAttribute="trailing" constant="310" id="8Z4-bX-hPn"/>
                                                 <constraint firstItem="cKZ-cq-0DQ" firstAttribute="top" secondItem="Him-ah-4E8" secondAttribute="bottom" constant="8" id="EGv-PH-GtO"/>
+                                                <constraint firstItem="X35-rA-Cha" firstAttribute="top" secondItem="cKZ-cq-0DQ" secondAttribute="bottom" constant="25" id="Eig-d9-7Sc"/>
                                                 <constraint firstAttribute="trailing" secondItem="Him-ah-4E8" secondAttribute="trailing" id="FJa-bd-24t"/>
+                                                <constraint firstItem="X35-rA-Cha" firstAttribute="leading" secondItem="qOo-Jj-JiM" secondAttribute="leading" constant="49" id="JCY-Os-xHi"/>
                                                 <constraint firstItem="Him-ah-4E8" firstAttribute="leading" secondItem="qOo-Jj-JiM" secondAttribute="leading" id="Kvx-id-UI0"/>
+                                                <constraint firstItem="QrK-oj-dX7" firstAttribute="top" secondItem="cKZ-cq-0DQ" secondAttribute="bottom" constant="30" id="Ld2-vf-qFr"/>
                                                 <constraint firstAttribute="trailing" secondItem="cKZ-cq-0DQ" secondAttribute="trailing" id="WuC-R2-rnA"/>
+                                                <constraint firstItem="QrK-oj-dX7" firstAttribute="leading" secondItem="X35-rA-Cha" secondAttribute="trailing" constant="17" id="ZKF-EF-1XU"/>
+                                                <constraint firstAttribute="bottom" secondItem="QrK-oj-dX7" secondAttribute="bottom" constant="7" id="bYl-uJ-2WY"/>
                                                 <constraint firstItem="cKZ-cq-0DQ" firstAttribute="leading" secondItem="qOo-Jj-JiM" secondAttribute="leading" id="okP-B3-aHN"/>
                                                 <constraint firstItem="Him-ah-4E8" firstAttribute="top" secondItem="qOo-Jj-JiM" secondAttribute="top" id="sij-kB-Ndb"/>
                                             </constraints>
@@ -299,9 +315,9 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VaP-Iv-SEt">
-                                <rect key="frame" x="19" y="567" width="48" height="30"/>
+                                <rect key="frame" x="24" y="564" width="40" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="15"/>
                                 <state key="normal" title="Gallery">
                                     <color key="titleColor" red="0.73071724179999997" green="0.25980879369999998" blue="0.1180690571" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
@@ -311,9 +327,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f3r-Ge-QYN">
-                                <rect key="frame" x="165" y="567" width="56" height="30"/>
+                                <rect key="frame" x="170" y="565" width="48" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="SUBMIT">
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="17"/>
+                                <state key="normal" title="POST">
                                     <color key="titleColor" red="0.73071724179999997" green="0.25980879369999998" blue="0.1180690571" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>

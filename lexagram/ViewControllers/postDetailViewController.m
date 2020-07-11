@@ -63,6 +63,7 @@
     }
     [formatter stringFromDate:mydate];
     self.detailstime.text = [formatter stringFromDate:mydate];
+    self.detailsuser_name.text = self.post.userID;
         
     }
   

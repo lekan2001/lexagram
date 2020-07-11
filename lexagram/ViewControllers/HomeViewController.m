@@ -120,6 +120,7 @@ NSString *HeaderViewIdentifier = @"TableViewHeaderView";
     query.limit = 20;
 
     // fetch data asynchronously
+    __weak typeof (self) weakSelf = self;
     [query findObjectsInBackgroundWithBlock:^(NSArray *posts, NSError *error) {
         if (posts != nil) {
             self.userpost = posts;
@@ -129,7 +130,7 @@ NSString *HeaderViewIdentifier = @"TableViewHeaderView";
             NSLog(@"%@", error.localizedDescription);
         }
     }];
-    
+    [weakSelf.postView reloadData];
     [self.refreshControl endRefreshing];
 }
 
@@ -179,6 +180,7 @@ NSString *HeaderViewIdentifier = @"TableViewHeaderView";
    // query.limit = 20;
 
     // fetch data asynchronously
+    __weak typeof (self) weakSelf = self;
     [query findObjectsInBackgroundWithBlock:^(NSArray *posts, NSError *error) {
         if (posts != nil) {
             self.userpost = posts;
@@ -189,12 +191,19 @@ NSString *HeaderViewIdentifier = @"TableViewHeaderView";
             [self.postView reloadData];
             NSLog(@"%@", error.localizedDescription);
         }
+        [weakSelf.postView reloadData];
     }];
     
     
     
     
 }
+//- (void)refreshPosts:(UIRefreshControl*)refreshControl{
+//    self.loadedCount = 0;
+//    [self fetchPosts: self.loadedCount];
+//    [refreshControl endRefreshing];
+//}
+
 
 
     
