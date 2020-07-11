@@ -198,11 +198,6 @@ NSString *HeaderViewIdentifier = @"TableViewHeaderView";
     
     
 }
-//- (void)refreshPosts:(UIRefreshControl*)refreshControl{
-//    self.loadedCount = 0;
-//    [self fetchPosts: self.loadedCount];
-//    [refreshControl endRefreshing];
-//}
 
 
 
